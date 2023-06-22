@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Quotes path="resources">
+    <Season id="1" path="S_1">
+        <Ep id="1" path="EP_1">
+            <Quote id="1" path="BigAloe.mp3">Тут описание</Quote>
+        </Ep>
+    </Season>
+</Quotes>

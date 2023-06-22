@@ -3,10 +3,13 @@ import os
 
 import telebot as tb
 
-API_TOKEN = os.environ.get('PAVLIK_API_TOKEN')
-
 logger = tb.logger
 logger.setLevel(logging.INFO)
+
+API_TOKEN = os.environ.get('PAVLIK_API_TOKEN')
+if not API_TOKEN:
+    logger.fatal('Telegram Bot API Token is not defined in environment variables')
+    exit(1)
 
 bot = tb.TeleBot(API_TOKEN)
 
