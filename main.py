@@ -1,5 +1,6 @@
 import logging
 import os
+import xml.etree.ElementTree as ET
 
 import telebot as tb
 
@@ -14,12 +15,26 @@ if not API_TOKEN:
 bot = tb.TeleBot(API_TOKEN)
 
 
+def simillar(query, quote):
+    return True
+
+
 def get_quotes(query):
     msg: str = query.query
-    words = msg.split()
+    queried_words = msg.split()
     results = []
 
-    # здесь итерируемся по описаниям мп3 файлов и если находим похожие слова — добавляем путь к мп3шке в results
+    tree = ET.parse('quotes.xml')
+    root = tree.getroot()
+
+    i = 0
+    for season in root:
+        for episode in season:
+            for quote in episode:
+                if simillar(queried_words, quote.attrib['desc']):
+                    path = '\\'.join([node.attrib['path'] for node in (root, season, episode, quote)])
+                    print(path)
+                    i += 1
     # result = tb.types.InlineQueryResultArticle(i, char.upper(), tb.types.InputTextMessageContent(char.lower()))
     # results.append(result)
     return results
