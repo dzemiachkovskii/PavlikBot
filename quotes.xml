@@ -2,8 +2,8 @@
 <Quotes path="resources">
     <Season path="S_1">
         <Ep path="EP_1">
-            <Quote path="BigAloe.mp3"
-                   desc="Тут описание"/>
+            <Quote text="ебануться чурка ебаная"
+                   path="DamnFuckingChump.ogg"/>
         </Ep>
     </Season>
 </Quotes>
