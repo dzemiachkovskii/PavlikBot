@@ -55,10 +55,22 @@ def query_text(inline_query):
         logger.error(e)
 
 
-@bot.message_handler(content_types=['voice'])
-def get_file_id(m):
-    msg = m.voice.file_id
-    logger.info(msg)
+@bot.message_handler(commands=['list'])
+def print_list(m):
+    msg = ''
+
+    tree = ET.parse('quotes.xml')
+    resources = tree.getroot()
+
+    i = 1
+    for season in resources:
+        for episode in season:
+            for quote in episode:
+                msg += f'{str(i)}. <pre>{quote.attrib["desc"]}</pre>\n\n'
+                i += 1
+    msg = f'<b>Всего цитат: {i}</b>\n\n' + msg
+
+    bot.send_message(m.chat.id, msg, parse_mode='HTML')
 
 
 bot.infinity_polling()
