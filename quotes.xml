@@ -2,8 +2,18 @@
 <Quotes>
     <Season id="1">
         <Ep id="1">
-            <Quote file_id="CQACAgIAAxkBAAMkZJrBF3tdmrSWiE2rwbfYhhu1fAEAApcwAAI5f9FIKGt5n4NYsqovBA"
+            <Quote file_id="AwACAgIAAxkBAAM2ZJrR_6rkBFd4iyLQiJTyGUyaRnMAAj4xAAI5f9FIaTqpll44ebUvBA"
                    desc="Ебануться, чурка ебаная"/>
+            <Quote file_id="AwACAgIAAxkBAAM5ZJrTLDD4RG6aoTEGv3dF_Zy9M0MAAksxAAI5f9FIE-HPuRmaH1MvBA"
+                   desc="Слышь, черт, есть у тебя курнуть, а?"/>
+            <Quote file_id="AwACAgIAAxkBAAM_ZJrVBRGnbUpeFfAzzvsBhG8Psz8AAl4xAAI5f9FIDE3ZxJ1DCw0vBA"
+                   desc="Спасибо, спасибо большое! Охуительная страна"/>
+            <Quote file_id="AwACAgIAAxkBAAM7ZJrTLdEvyRB3VEa6Yl9hJaR2-pUAAk0xAAI5f9FIPljqm4eZtdQvBA"
+                   desc="Здарова, братиш. Слушай, а где здесь можно вырубить покурить? Ну дунуть где здесь купить? Шибануть анаши, хапнуть ведра, дурьца хорошего, вдохнуть запах марихуаны мариваны"/>
+            <Quote file_id="AwACAgIAAxkBAAM8ZJrTLfZSZkr80BeoHbfnPjLwwt4AAk4xAAI5f9FIYpgVSumA2CsvBA"
+                   desc="Да-да-да"/>
+            <Quote file_id="AwACAgIAAxkBAANBZJrWaY83RhPhs30Oui-6JFk-LK0AAmgxAAI5f9FI70nY71jsXvEvBA"
+                   desc="Здарова! Че ты лыбишься? Есть дунуть у тебя, а?"/>
         </Ep>
     </Season>
 </Quotes>
