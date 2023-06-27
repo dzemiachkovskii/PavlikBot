@@ -18,9 +18,8 @@ bot = tb.TeleBot(API_TOKEN)
 
 def similar(query, quote):
     for query_word in query:
-        for quote_word in re.findall(r'\w+', quote.lower()):
-            if query_word.lower() in quote_word:
-                return True
+        if query_word.lower() in re.findall(r'\w+', quote.lower()):
+            return True
     return False
 
 
@@ -62,13 +61,17 @@ def print_list(m):
     tree = ET.parse('quotes.xml')
     resources = tree.getroot()
 
-    i = 1
+    total_count = 0
     for season in resources:
+        msg += f'<b>{season.attrib["id"]} СЕЗОН:</b>\n'
         for episode in season:
+            msg += f'    <b>{episode.attrib["id"]} СЕРИЯ:</b>\n'
+            i = 1
             for quote in episode:
-                msg += f'{str(i)}. <pre>{quote.attrib["desc"]}</pre>\n\n'
+                msg += f'        {str(i)}. <pre>{quote.attrib["desc"]}</pre>\n\n'
                 i += 1
-    msg = f'<b>Всего цитат: {i}</b>\n\n' + msg
+                total_count += 1
+    msg = f'<b>Всего цитат: {total_count}</b>\n\n' + msg
 
     bot.send_message(m.chat.id, msg, parse_mode='HTML')
 

@@ -12,7 +12,7 @@
                    desc="Спасибо, спасибо большое! Охуительная страна"/>
 
             <Quote file_id="AwACAgIAAxkBAAM7ZJrTLdEvyRB3VEa6Yl9hJaR2-pUAAk0xAAI5f9FIPljqm4eZtdQvBA"
-                   desc="Здарова, братиш. Слушай, а где здесь можно вырубить покурить? Ну дунуть где здесь купить? Шибануть анаши, хапнуть ведра, дурьца хорошего, вдохнуть запах марихуаны мариваны"/>
+                   desc="Здарова, братиш. Слушай, а где здесь можно вырубить покурить? Ну дунуть где здесь купить? Шибануть анаши, хапнуть ведра, дурьца хорошего, вдохнуть запах мариваны..."/>
 
             <Quote file_id="AwACAgIAAxkBAAM8ZJrTLfZSZkr80BeoHbfnPjLwwt4AAk4xAAI5f9FIYpgVSumA2CsvBA"
                    desc="Да-да-да"/>
@@ -20,7 +20,7 @@
             <Quote file_id="AwACAgIAAxkBAANBZJrWaY83RhPhs30Oui-6JFk-LK0AAmgxAAI5f9FI70nY71jsXvEvBA"
                    desc="Здарова! Че ты лыбишься? Есть дунуть у тебя, а?"/>
         </Ep>
-        <Ep>
+        <Ep id="2">
             <Quote file_id="AwACAgIAAxkBAANGZJrdqDE9NkRnQNBv-VExUaKeNHoAApcxAAI5f9FIT1oAAZLL081DLwQ"
                    desc="Да харош, давай за пятихат?"/>
 
