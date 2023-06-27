@@ -3,19 +3,19 @@
     <Season id="1">
         <Ep id="1">
             <Quote file_id="AwACAgIAAxkBAAM2ZJrR_6rkBFd4iyLQiJTyGUyaRnMAAj4xAAI5f9FIaTqpll44ebUvBA"
-                   desc="Ебануться, чурка ебаная"/>
+                   desc="Ебануться! Чурка ебаная."/>
 
             <Quote file_id="AwACAgIAAxkBAAM5ZJrTLDD4RG6aoTEGv3dF_Zy9M0MAAksxAAI5f9FIE-HPuRmaH1MvBA"
                    desc="Слышь, черт, есть у тебя курнуть, а?"/>
 
             <Quote file_id="AwACAgIAAxkBAAM_ZJrVBRGnbUpeFfAzzvsBhG8Psz8AAl4xAAI5f9FIDE3ZxJ1DCw0vBA"
-                   desc="Спасибо, спасибо большое! Охуительная страна"/>
+                   desc="Спасибо, спасибо большое! Охуительная страна."/>
 
             <Quote file_id="AwACAgIAAxkBAAM7ZJrTLdEvyRB3VEa6Yl9hJaR2-pUAAk0xAAI5f9FIPljqm4eZtdQvBA"
-                   desc="Здарова, братиш. Слушай, а где здесь можно вырубить покурить? Ну дунуть где здесь купить? Шибануть анаши, хапнуть ведра, дурьца хорошего, вдохнуть запах мариваны..."/>
+                   desc="Здарова, братиш. Слушай, а где здесь можно вырубить покурить?% ну дунуть где здесь купить шибануть анаши хапнуть ведра дурьца хорошего вдохнуть запах мариваны"/>
 
             <Quote file_id="AwACAgIAAxkBAAM8ZJrTLfZSZkr80BeoHbfnPjLwwt4AAk4xAAI5f9FIYpgVSumA2CsvBA"
-                   desc="Да-да-да"/>
+                   desc="Да-да-да!"/>
 
             <Quote file_id="AwACAgIAAxkBAANBZJrWaY83RhPhs30Oui-6JFk-LK0AAmgxAAI5f9FI70nY71jsXvEvBA"
                    desc="Здарова! Че ты лыбишься? Есть дунуть у тебя, а?"/>
@@ -25,7 +25,7 @@
                    desc="Да харош, давай за пятихат?"/>
 
             <Quote file_id="AwACAgIAAxkBAANFZJrdqNragez5C1GzJOXa3Mv1V7cAApYxAAI5f9FIBvl8-dIGITEvBA"
-                   desc="Слушай, ништяк, щас телочку нам приведут, огонь"/>
+                   desc="Слушай, ништяк, щас телочку нам приведут, огонь!"/>
 
             <Quote file_id="AwACAgIAAxkBAANEZJrdqG0lvG0RODXVPVPFWofix28AApUxAAI5f9FI70dqXzkayswvBA"
                    desc="Ебать, а ты нас не сожрешь?"/>
@@ -43,7 +43,7 @@
                    desc="Слышь, а че почем?"/>
 
             <Quote file_id="AwACAgIAAxkBAANJZJrfxS6MJuvkRwf-AvtquHHBSYUAAqYxAAI5f9FIFLD4lFc9FtEvBA"
-                   desc="Да не, ниче, я угараю"/>
+                   desc="Да не, ниче, я угараю."/>
 
             <Quote file_id="AwACAgIAAxkBAANKZJrf32f1-tmak9bkcyP4hWzMwYQAAqoxAAI5f9FIsZCRLS1Ft2UvBA"
                    desc="Окей. Валера, настало твое время!"/>
@@ -52,16 +52,65 @@
                    desc="Слышь ты, хуй в очках, повтори это Валере!"/>
 
             <Quote file_id="AwACAgIAAxkBAANMZJrhN9Cdz9zHS2jc7E1kYQtxpSAAArUxAAI5f9FIYAj-Ie2uCasvBA"
-                   desc="На на на на (поет Sieben Tage Lang)"/>
+                   desc="На на на на (поет Sieben Tage Lang)."/>
 
             <Quote file_id="AwACAgIAAxkBAANNZJrhSks0FqUr0ytht5e6TgdZKywAArcxAAI5f9FIDepO-iCHP-8vBA"
-                   desc="Нихуя, как дорого... Есть пятихат"/>
+                   desc="Нихуя, как дорого... Есть пятихат."/>
 
             <Quote file_id="AwACAgIAAxkBAANOZJrhSo137hJWMpg046lscCNZqg4AArgxAAI5f9FIMKQ7sRS3RtwvBA"
                    desc="Валера, настало твое время!"/>
 
             <Quote file_id="AwACAgIAAxkBAANPZJrhSlfqkkYmr8SN-8t5vBBjqZUAArkxAAI5f9FIEZ1CQAf7HQsvBA"
-                   desc="Жанну Агузарову. Похуй какой трек"/>
+                   desc="Жанну Агузарову. Похуй какой трек."/>
+        </Ep>
+        <Ep id="3">
+            <Quote file_id="AwACAgIAAxkBAAN-ZJr7VHEbWZDj55vGTkSnbX-SeuwAAkkwAAI5f9lIE0uWddRibyIvBA"
+                   desc="Ништяк, мариванна, ты меня всегда выручаешь!"/>
+
+            <Quote file_id="AwACAgIAAxkBAAN_ZJr7VMM2Mp8qHPUalFlehpTgCn8AAkowAAI5f9lIHDmUCCnkpMkvBA"
+                   desc="Денчик, ну ей-богу, ты без ножа режешь, ты че как маленький?"/>
+
+            <Quote file_id="AwACAgIAAxkBAAOAZJr7VVSMYWrMhYbwY0g0WvwfviAAAkswAAI5f9lIPB4OuNuUtLovBA"
+                   desc="Наркоман ебучий, блять!"/>
+
+            <Quote file_id="AwACAgIAAxkBAAOBZJr7VaYvRYOFUDBpJ5bpNh_nv0cAAkwwAAI5f9lItTNPBBN76S0vBA"
+                   desc="Слушай, а че, есть чем продырявить?"/>
+
+            <Quote file_id="AwACAgIAAxkBAAOCZJr7VQI-5lwqSDTzYsxC9dTJbQADTTAAAjl_2Uh9z1h5O7Ozwi8E"
+                   desc="Слышь, мумия, любишь шоколад?"/>
+
+            <Quote file_id="AwACAgIAAxkBAAODZJr7VYvOuEXFeEkRvfCjnFa_lZkAAk4wAAI5f9lI-qYxqytvfg4vBA"
+                   desc="Слышь, мумия, хочешь стать звездой?"/>
+
+            <Quote file_id="AwACAgIAAxkBAAOEZJr7VsYThHx9nwvjpsoTOyDODvAAAk8wAAI5f9lIjMv6O2URa6cvBA"
+                   desc="Слышь, мумия, а ты эрудит! Я со своими двумя высшими вообще отдыхаю."/>
+
+            <Quote file_id="AwACAgIAAxkBAAOFZJr7Vr0Pch3HX90QfYqJv4_X45cAAlAwAAI5f9lIfkAHPLWma_0vBA"
+                   desc="О, Денчик! Здарова, братиш, заходи!"/>
+
+            <Quote file_id="AwACAgIAAxkBAAOGZJr7ViIbR2MJ9bT7emf6R7KA95kAAlEwAAI5f9lI24_wHw2iJiEvBA"
+                   desc="Ого, да ты прям лейтенант очевидность! (капитан"/>
+
+            <Quote file_id="AwACAgIAAxkBAAOHZJr7Vtw3HKxxutajlPlRZVh9SR8AAlIwAAI5f9lI_Jqt3sTg_2cvBA"
+                   desc="Ну, похуй. Ништяки принес?"/>
+
+            <Quote file_id="AwACAgIAAxkBAAOIZJr7V3sfo3H7GtXa-Xzx4F-Lp4AAAlMwAAI5f9lI_j0LlHilKAEvBA"
+                   desc="Ништяк! Я к главврачу."/>
+
+            <Quote file_id="AwACAgIAAxkBAAOJZJr7V5km0P_VXaO_ZExO9ufwMLgAAlQwAAI5f9lIzJq0RA9-LW4vBA"
+                   desc="Вот, экшн, ништяк! Барбара, Джессика, мумия ожила! Спасайте артефакты!"/>
+
+            <Quote file_id="AwACAgIAAxkBAAOKZJr7V1PDPDTMmIUhJd-NcxRCH1EAAlUwAAI5f9lIfQauwZK_0RcvBA"
+                   desc="А Вы кто, фея?"/>
+
+            <Quote file_id="AwACAgIAAxkBAAOLZJr7WFRbLuW0LExhI-ANJq6erZwAAlYwAAI5f9lI4C0NG88gUI0vBA"
+                   desc="Зачем Вы, девушка, смеетесь над чужим горем? Я друга потерял..."/>
+
+            <Quote file_id="AwACAgIAAxkBAAOMZJr7WDJRObdtJtdPjmGKM3OGvPAAAlcwAAI5f9lI20RXldWWt5kvBA"
+                   desc="Слышь, че за негатив?"/>
+
+            <Quote file_id="AwACAgIAAxkBAAONZJr7WMNZSHhaMfutqadZBXRIRSMAAlgwAAI5f9lIFLcb4U_eZCQvBA"
+                   desc="Только ты какой-то тухлый, какой-то нединамичный...%Нужен экшн! Без экшна ты так и останешься безликим ничтожеством."/>
         </Ep>
     </Season>
 </Quotes>

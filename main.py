@@ -68,12 +68,30 @@ def print_list(m):
             msg += f'    <b>{episode.attrib["id"]} СЕРИЯ:</b>\n'
             i = 1
             for quote in episode:
-                msg += f'        {str(i)}. <pre>{quote.attrib["desc"]}</pre>\n\n'
+                text = quote.attrib['desc']
+                text = text[:text.find('%')]  # cutting extra words used for search
+                msg += f'        {str(i)}. <pre>{text}</pre>\n\n'
                 i += 1
                 total_count += 1
     msg = f'<b>Всего цитат: {total_count}</b>\n\n' + msg
 
     bot.send_message(m.chat.id, msg, parse_mode='HTML')
+
+
+msg = ''  # DELETE THIS
+
+
+@bot.message_handler(content_types=['voice'])  # DELETE THIS
+def get_file_id(m):
+    global msg
+    msg += m.voice.file_id + '\n'
+
+
+@bot.message_handler(commands=['save'])  # DELETE THIS
+def save(m):
+    global msg
+    with open('ids.txt', 'w') as f:
+        f.write(msg)
 
 
 bot.infinity_polling()
