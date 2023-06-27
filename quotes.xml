@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Quotes path="resources">
-    <Season path="S_1">
-        <Ep path="EP_1">
-            <Quote text="ебануться чурка ебаная"
-                   path="DamnFuckingChump.ogg"/>
+<Quotes>
+    <Season id="1">
+        <Ep id="1">
+            <Quote file_id="CQACAgIAAxkBAAMkZJrBF3tdmrSWiE2rwbfYhhu1fAEAApcwAAI5f9FIKGt5n4NYsqovBA"
+                   desc="Ебануться, чурка ебаная"/>
         </Ep>
     </Season>
 </Quotes>

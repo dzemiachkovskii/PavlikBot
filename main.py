@@ -1,5 +1,6 @@
 import logging
 import os
+import re
 import xml.etree.ElementTree as ET
 
 import telebot as tb
@@ -15,10 +16,11 @@ if not API_TOKEN:
 bot = tb.TeleBot(API_TOKEN)
 
 
-def simillar(query, quote):
-    for word in query:
-        if word in quote:
-            return True
+def similar(query, quote):
+    for query_word in query:
+        for quote_word in re.findall(r'\w+', quote.lower()):
+            if query_word.lower() in quote_word:
+                return True
     return False
 
 
@@ -27,20 +29,17 @@ def get_quotes(query):
     quotes = []
 
     tree = ET.parse('quotes.xml')
-    root = tree.getroot()
+    resources = tree.getroot()
 
     i = 0
-    for season in root:
+    for season in resources:
         for episode in season:
             for quote in episode:
-                if simillar(queried_words, quote.attrib['text']):
-                    path = '\\'.join([node.attrib['path'] for node in (root, season, episode, quote)])
-                    with open(path, 'rb') as f:
-                        pass
-                    result = tb.types.InlineQueryResultCachedVoice(i, 'VOICE FILE ID', quote.attrib['text'])
-                    # how do i upload a voice to telegram server and add it like an InlineQueryResultCachedVoice...
+                quote_text = quote.attrib['desc']
+                if similar(queried_words, quote_text):
+                    file_id = quote.attrib['file_id']
+                    result = tb.types.InlineQueryResultCachedVoice(i, file_id, quote_text)
                     quotes.append(result)
-                    print(path)
                     i += 1
 
     return quotes
@@ -54,6 +53,12 @@ def query_text(inline_query):
             bot.answer_inline_query(inline_query.id, quotes)
     except Exception as e:
         logger.error(e)
+
+
+@bot.message_handler(content_types=['voice'])
+def get_file_id(m):
+    msg = m.voice.file_id
+    logger.info(msg)
 
 
 bot.infinity_polling()
