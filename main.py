@@ -41,7 +41,7 @@ def get_quotes(query):
                 quote_text = quote.attrib['desc']
                 if similar(queried_words, quote_text):
                     file_id = quote.attrib['file_id']
-                    result = tb.types.InlineQueryResultCachedVoice(i, file_id, quote_text)
+                    result = tb.types.InlineQueryResultCachedVoice(i, file_id, quote_text[:quote_text.find('%')])
                     quotes.append(result)
                     i += 1
 
