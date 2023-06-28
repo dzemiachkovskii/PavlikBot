@@ -8,10 +8,14 @@ import telebot as tb
 logger = tb.logger
 logger.setLevel(logging.INFO)
 
-API_TOKEN = os.environ.get('PAVLIK_API_TOKEN')
+ADMIN_UID = os.environ.get('PAVLIK_BOT_ADMIN_UID')
+API_TOKEN = os.environ.get('PAVLIK_BOT_TOKEN')
 if not API_TOKEN:
-    logger.fatal('Telegram Bot API Token is not defined in environment variables')
+    logger.fatal('Telegram Bot API token is not defined in environment variables')
     exit(1)
+if not ADMIN_UID:
+    logger.fatal('Admin UID is not defined in environment variables')
+    exit(2)
 
 bot = tb.TeleBot(API_TOKEN)
 
@@ -78,20 +82,10 @@ def print_list(m):
     bot.send_message(m.chat.id, msg, parse_mode='HTML')
 
 
-msg = ''  # DELETE THIS
-
-
-@bot.message_handler(content_types=['voice'])  # DELETE THIS
+@bot.message_handler(content_types=['voice'])  # to get file id's
 def get_file_id(m):
-    global msg
-    msg += m.voice.file_id + '\n'
-
-
-@bot.message_handler(commands=['save'])  # DELETE THIS
-def save(m):
-    global msg
-    with open('ids.txt', 'w') as f:
-        f.write(msg)
+    if str(m.chat.id) == ADMIN_UID:
+        bot.send_message(m.chat.id, m.voice.file_id, reply_to_message_id=m.message_id)
 
 
 bot.infinity_polling()
