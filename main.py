@@ -67,14 +67,14 @@ def print_list(m):
 
     total_count = 0
     for season in resources:
-        msg += f'<b>{season.attrib["id"]} СЕЗОН:</b>\n'
+        msg += f'        <b>{season.attrib["id"]} СЕЗОН:</b>\n'
         for episode in season:
             msg += f'    <b>{episode.attrib["id"]} СЕРИЯ:</b>\n'
             i = 1
             for quote in episode:
                 text = quote.attrib['desc']
                 text = text[:text.find('%')]  # cutting extra words used for search
-                msg += f'        {str(i)}. <pre>{text}</pre>\n\n'
+                msg += f'{str(i)}. <pre>{text}</pre>\n'
                 i += 1
                 total_count += 1
     msg = f'<b>Всего цитат: {total_count}</b>\n\n' + msg
