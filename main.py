@@ -49,6 +49,16 @@ def get_quotes(query):
     return quotes
 
 
+def send_big_message(cid, msg):
+    if len(msg) > 4096:
+        gap_index = msg[:4096].rfind('\n')
+        cropped_msg = msg[:gap_index]
+        bot.send_message(cid, cropped_msg, parse_mode='HTML')
+        send_big_message(cid, msg[gap_index:])
+    else:
+        bot.send_message(cid, msg, parse_mode='HTML')
+
+
 @bot.message_handler(commands=['start'])
 def start(m):
     msg = 'Здарова, братиш!\n\n' \
@@ -79,7 +89,7 @@ def print_list(m):
                 total_count += 1
     msg = f'<b>Всего цитат: {total_count}</b>\n\n' + msg
 
-    bot.send_message(m.chat.id, msg, parse_mode='HTML')
+    send_big_message(m.chat.id, msg)
 
 
 @bot.inline_handler(lambda query: len(query.query) >= 0)
