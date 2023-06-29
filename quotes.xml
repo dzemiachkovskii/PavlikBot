@@ -112,5 +112,12 @@
             <Quote file_id="AwACAgIAAxkBAAONZJr7WMNZSHhaMfutqadZBXRIRSMAAlgwAAI5f9lIFLcb4U_eZCQvBA"
                    desc="Только ты какой-то тухлый, какой-то нединамичный...%нужен экшн без экшна ты так и останешься безликим ничтожеством"/>
         </Ep>
+        <Ep id="4">
+            <Quote file_id="AwACAgIAAxkBAAOnZJzXwidy7eamy502jM42Qfya-G4AArAvAALFcuhI3bkn_fmjUfIvBA"
+                   desc="Ебать, братиш, а она у тя щас не развалится?%тебя сейчас"/>
+
+            <Quote file_id="AwACAgIAAxkBAAOoZJzXwsRF_aNB_Y3kb4fJJRU2skoAArEvAALFcuhIKrm1Mb6i-5EvBA"
+                   desc="Денчик!"/>
+        </Ep>
     </Season>
 </Quotes>
