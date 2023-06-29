@@ -49,14 +49,13 @@ def get_quotes(query):
     return quotes
 
 
-@bot.inline_handler(lambda query: len(query.query) >= 0)
-def query_text(inline_query):
-    try:
-        quotes = get_quotes(inline_query.query)
-        if quotes:
-            bot.answer_inline_query(inline_query.id, quotes)
-    except Exception as e:
-        logger.error(e)
+@bot.message_handler(commands=['start'])
+def start(m):
+    msg = 'Здарова, братиш!\n\n' \
+          'Чтобы воспользоваться ботом, введи в любом чате @NarcoPavlikBot и фразу, которую хочешь отправить.' \
+          'Бот предложит варианты голосовых сообщений, которые доступны для отправки.\n\n' \
+          'Также ты можешь воспользоваться командой /list, чтобы посмотреть все доступные на данный момент фразы.'
+    bot.send_message(m.chat.id, msg)
 
 
 @bot.message_handler(commands=['list'])
@@ -81,6 +80,16 @@ def print_list(m):
     msg = f'<b>Всего цитат: {total_count}</b>\n\n' + msg
 
     bot.send_message(m.chat.id, msg, parse_mode='HTML')
+
+
+@bot.inline_handler(lambda query: len(query.query) >= 0)
+def query_text(inline_query):
+    try:
+        quotes = get_quotes(inline_query.query)
+        if quotes:
+            bot.answer_inline_query(inline_query.id, quotes)
+    except Exception as e:
+        logger.error(e)
 
 
 @bot.message_handler(content_types=['voice'])  # to get file id's
